@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.ShopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox"
+                    android:layout_toRightOf="@id/myCheckBox"
+                    android:background="@drawable/milk" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView"
+                    android:text="蒙牛纯真牛奶"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView"
+                    android:text="¥39.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  二行  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox2"
+                    android:layout_toRightOf="@id/myCheckBox2"
+                    android:background="@drawable/book" />
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView2"
+                    android:text="数据库原理与应用"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView2"
+                    android:text="¥75.5"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox3"
+                    android:layout_toRightOf="@id/myCheckBox3"
+                    android:background="@drawable/computer" />
+
+                <TextView
+                    android:id="@+id/tv_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView3"
+                    android:text="华硕笔记本"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name3"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView3"
+                    android:text="¥5999.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox4"
+                    android:layout_toRightOf="@id/myCheckBox4"
+                    android:background="@drawable/a" />
+
+                <TextView
+                    android:id="@+id/tv_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView4"
+                    android:text="最新款正品ck手表"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name4"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView4"
+                    android:text="¥588.8"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox5"
+                    android:layout_toRightOf="@id/myCheckBox5"
+                    android:background="@drawable/c" />
+
+                <TextView
+                    android:id="@+id/tv_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView5"
+                    android:text="女士手提包"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name5"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView5"
+                    android:text="¥1399.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox6"
+                    android:layout_toRightOf="@id/myCheckBox6"
+                    android:background="@drawable/e" />
+
+                <TextView
+                    android:id="@+id/tv_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView6"
+                    android:text="乐事45g经典原味"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name6"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView6"
+                    android:text="¥9.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price6"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox7"
+                    android:layout_toRightOf="@id/myCheckBox7"
+                    android:background="@drawable/f" />
+
+                <TextView
+                    android:id="@+id/tv_name7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView7"
+                    android:text="卫龙辣条"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name7"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView7"
+                    android:text="¥4.5"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price7"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView8"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox8"
+                    android:layout_toRightOf="@id/myCheckBox8"
+                    android:background="@drawable/g" />
+
+                <TextView
+                    android:id="@+id/tv_name8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView8"
+                    android:text="野山椒凤年爪70g"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name8"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView8"
+                    android:text="¥10.1"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price8"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView9"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/myCheckBox9"
+                    android:layout_toRightOf="@id/myCheckBox9"
+                    android:background="@drawable/h" />
+
+                <TextView
+                    android:id="@+id/tv_name9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView9"
+                    android:text="Android移动开发基础案例教程"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name9"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView9"
+                    android:text="¥50.5"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price9"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView10"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox10"
+                    android:layout_toRightOf="@id/myCheckBox10"
+                    android:background="@drawable/i" />
+
+                <TextView
+                    android:id="@+id/tv_name10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView10"
+                    android:text="第一行代码"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name10"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView10"
+                    android:text="¥88.8"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price10"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value10"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView11"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox11"
+                    android:layout_toRightOf="@id/myCheckBox11"
+                    android:background="@drawable/j" />
+
+                <TextView
+                    android:id="@+id/tv_name11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView11"
+                    android:text="Lenovo笔记本"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_price11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name11"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView11"
+                    android:text="¥5880.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price11"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value11"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--  新的一行item  -->
+        <LinearLayout
+            android:id="@+id/myLinearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_style"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/itemkey"
+                android:text="天猫超市"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/myCheckBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/myImageView12"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@id/myCheckBox12"
+                    android:layout_toRightOf="@id/myCheckBox12"
+                    android:background="@drawable/k" />
+
+                <TextView
+                    android:id="@+id/tv_name12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/myImageView12"
+                    android:text="vivoY71"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <TextView8
+                    android:id="@+id/tv_price12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name12"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/myImageView12"
+                    android:text="¥1999.9"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_price12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_minus12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/et_value12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
